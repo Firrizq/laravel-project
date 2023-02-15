@@ -40,7 +40,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <a href="{{url('/')}}">
+                            <a href="{{url('/mahasiswa')}}">
                                 << Kembali ke halaman utama <<
                             </a>
                         </div>

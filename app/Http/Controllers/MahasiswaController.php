@@ -22,6 +22,10 @@ class MahasiswaController extends Controller
         ]);
     }
 
+    public function welcome(){
+        return view('welcome');
+    }
+
 
     /**
      * Show the form for creating a new resource.

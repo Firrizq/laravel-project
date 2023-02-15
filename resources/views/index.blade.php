@@ -12,7 +12,7 @@
             </div>
 
             <div class="mt-5">
-                <table class="table table-striped">
+                <table class="table table-striped table-bordered">
                     <tr>
                         <th>Nama</th>
                         <th>NIM</th>

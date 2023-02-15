@@ -40,12 +40,6 @@
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary">Edit</button>
                         </div>
-
-                        <div class="mb-3">
-                            <a href="{{url('/')}}">
-                                << Kembali ke halaman utama <<
-                            </a>
-                        </div>
                     </form>
                 </div>
             </div>

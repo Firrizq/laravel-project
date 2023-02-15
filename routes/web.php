@@ -19,7 +19,8 @@ use App\Models\Mahasiswa;
 //     return view('welcome');
 // });
 
-Route::get('/', [MahasiswaController::class, 'index']);
+Route::get('/', [MahasiswaController::class, 'welcome']);
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 Route::get('/create', [MahasiswaController::class, 'create']);
 Route::post('/store', [MahasiswaController::class, 'store']);
 Route::get('/edit/{id}', [MahasiswaController::class, 'edit']);
