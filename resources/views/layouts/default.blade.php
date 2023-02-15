@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>MahaStudent</title>
 
     @stack('before-style')
@@ -23,8 +24,8 @@
                 </ul>
                 <div class="text-end">
                     @guest
-                    <a href="#" class="btn btn-outline-light me-2">Login</a>
-                    <a href="#" class="btn btn-warning">Sign-up</a>
+                    <a href="{{url('/login')}}" class="btn btn-outline-light me-2"><i class="bi bi-box-arrow-in-right"></i></a>
+                    <a href="#" class="btn btn-warning"><i class="bi bi-door-open"></i></a>
                     @else
                     <a href="#" class="btn btn-outline-light me-2" 
                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{Auth::user()->name}}</a>

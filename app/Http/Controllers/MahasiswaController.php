@@ -111,4 +111,8 @@ class MahasiswaController extends Controller
         ->delete();
         return redirect('/');
     }
+
+    public function login(){
+        return view('login');
+    }
 }
