@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Mahasiswa;
+use Illuminate\Support\Facades\Auth;
 
 class MahasiswaController extends Controller
 {
@@ -53,7 +54,7 @@ class MahasiswaController extends Controller
 
         $data = $request -> except(['_token']);
         Mahasiswa::insert($data);
-        return redirect('/');
+        return redirect('/mahasiswa');
     }
 
     /**
@@ -110,9 +111,5 @@ class MahasiswaController extends Controller
         $item = Mahasiswa::find($id)
         ->delete();
         return redirect('/');
-    }
-
-    public function login(){
-        return view('login');
     }
 }

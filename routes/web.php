@@ -26,4 +26,3 @@ Route::post('/store', [MahasiswaController::class, 'store']);
 Route::get('/edit/{id}', [MahasiswaController::class, 'edit']);
 Route::post('/update/{id}', [MahasiswaController::class, 'update']);
 Route::get('/delete/{id}', [MahasiswaController::class, 'delete']);
-Route::get('/login', [MahasiswaController::class, 'login']);

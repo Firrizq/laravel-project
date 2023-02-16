@@ -7,7 +7,7 @@
                 @guest
                 <span class="fs-5 fw-semibold">Guest</span>
                 @else
-                {{-- <span class="fs-5 fw-semibold">{{Auth::user()->name}}</span> --}}
+                <span class="fs-5 fw-semibold">{{Auth::user()->name}}</span>
                 @endguest
             </span>
             <a href="{{url('/mahasiswa')}}" class="btn btn-success align-self-end">Mahasiswa List</a>

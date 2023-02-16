@@ -24,12 +24,12 @@
                 </ul>
                 <div class="text-end">
                     @guest
-                    <a href="{{url('/login')}}" class="btn btn-outline-light me-2"><i class="bi bi-box-arrow-in-right"></i></a>
-                    <a href="#" class="btn btn-warning"><i class="bi bi-door-open"></i></a>
+                    <a href="{{route('login')}}" class="btn btn-outline-light me-2"><i class="bi bi-box-arrow-in-right"></i></a>
+                    <a href="{{route('register')}}" class="btn btn-warning"><i class="bi bi-door-open"></i></a>
                     @else
-                    <a href="#" class="btn btn-outline-light me-2" 
+                    <a href="#" class="btn btn-outline-light me-2"
                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{Auth::user()->name}}</a>
-                    <form action="#" id="logout-form" method="POST">
+                    <form action="{{route('logout')}}" id="logout-form" method="POST">
                         @csrf
                     </form>
                     @endguest
