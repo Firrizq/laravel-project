@@ -1,11 +1,12 @@
 @extends('layouts.default')
 
 @section('content')
-        <div class="container mt-5" style="width: 60%">
+<section>
+    <div class="container mt-5" style="width: 60%">
             <div class="card mx-auto mt-5 w-50" >
                 <div class="card-body">
                     <h1>Login</h1>
-                    <form action="{{route("login")}}" method="POST">
+                    <form action="{{route('login')}}" method="POST">
                         @csrf
                         <div class="mb-3">
                             <label for="nama">Email</label>
@@ -30,12 +31,14 @@
                         </div>
 
                         <div class="mb-3">
-                            <a href="{{url('/mahasiswa')}}">
-                                << Kembali ke halaman utama <<
+                            <a href="{{route('password.request')}}">
+                                Lupa Password?
                             </a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+</section>
+        
 @endsection

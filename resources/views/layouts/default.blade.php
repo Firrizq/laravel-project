@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>MahaStudent</title>
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/free-icon/mortarboard_318-183092.jpg?w=360">
 
     @stack('before-style')
     @include('includes.style')
