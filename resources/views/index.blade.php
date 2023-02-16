@@ -11,7 +11,6 @@
             <div class="col-lg-8">
                 <h1>Data Mahasiswa</h1>
                 <h5>Total Mahasiswa : {{$mahasiswa}}</h5>
-                <a href="{{ url('/create') }}" class="btn btn-primary">Tambah Mahasiswa</a>
             </div>
 
             <div class="mt-5">
