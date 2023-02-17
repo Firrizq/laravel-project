@@ -35,6 +35,11 @@
                                 Lupa Password?
                             </a>
                         </div>
+                        <div class="mb-3">
+                            <a href="{{url('/register')}}">
+                                Tidak Punya Akun?
+                            </a>
+                        </div>
                     </form>
                 </div>
             </div>

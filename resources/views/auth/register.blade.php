@@ -43,6 +43,12 @@
                             <button type="submit" class="btn btn-primary">Daftar</button>
                         </div>
 
+                        <div class="mb-3">
+                            <a href="{{url('/login')}}">
+                                Sudah Punya Akun?
+                            </a>
+                        </div>
+
                     </form>
                 </div>
             </div>
