@@ -21,8 +21,8 @@ use App\Models\Mahasiswa;
 
 Route::get('/', [MahasiswaController::class, 'welcome']);
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
-Route::get('/create', [MahasiswaController::class, 'create']);
-Route::post('/store', [MahasiswaController::class, 'store']);
-Route::get('/edit/{id}', [MahasiswaController::class, 'edit']);
-Route::post('/update/{id}', [MahasiswaController::class, 'update']);
-Route::get('/delete/{id}', [MahasiswaController::class, 'delete']);
+Route::get('/create', [MahasiswaController::class, 'create'])->middleware('is_admin');
+Route::post('/store', [MahasiswaController::class, 'store'])->middleware('is_admin');
+Route::get('/edit/{id}', [MahasiswaController::class, 'edit'])->middleware('is_admin');
+Route::post('/update/{id}', [MahasiswaController::class, 'update'])->middleware('is_admin');
+Route::get('/delete/{id}', [MahasiswaController::class, 'delete'])->middleware('is_admin');
