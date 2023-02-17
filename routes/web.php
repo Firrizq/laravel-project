@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\HomeController;
 use App\Models\Mahasiswa;
 
 /*
@@ -19,7 +20,7 @@ use App\Models\Mahasiswa;
 //     return view('welcome');
 // });
 
-Route::get('/', [MahasiswaController::class, 'welcome']);
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 Route::get('/create', [MahasiswaController::class, 'create'])->middleware('is_admin');
 Route::post('/store', [MahasiswaController::class, 'store'])->middleware('is_admin');
