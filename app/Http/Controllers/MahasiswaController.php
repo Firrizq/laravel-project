@@ -104,7 +104,7 @@ class MahasiswaController extends Controller
         $item = Mahasiswa::findOrFail($id);
         $data = $request -> except(['_token']);
         $item->update($data);
-        return redirect('/');
+        return redirect('/mahasiswa');
     }
 
     /**
@@ -117,6 +117,6 @@ class MahasiswaController extends Controller
     {
         $item = Mahasiswa::find($id)
         ->delete();
-        return redirect('/');
+        return redirect('/mahasiswa');
     }
 }
